@@ -1,15 +1,15 @@
 
 
-const ShoeCard = ({imgURL, changeBigShoeImg, bigShoeImg}) => {
+const ShoeCard = ({imgURL, changeBigShoeImg, isBigShoe}) => {
     const handleClick =() =>{
-        if(bigShoeImg !== imgURL.bigShoe){
+        if(!isBigShoe){
             changeBigShoeImg(imgURL.bigShoe)
         }
     }
 
     return (
-    <div className={`border-2 rounded-xl
-    ${bigShoeImg===imgURL.bigShoe ? 'border-coral-red' : 
+    <div className={`border-4 rounded-xl
+    ${isBigShoe ? 'border-coral-red' : 
     'border-transparent'}  cursor-pointer max-sm:flex-1`}
     onClick={handleClick}>
         <div className="flex justify-center items-center

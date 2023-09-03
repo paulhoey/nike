@@ -60,7 +60,7 @@ const Hero = () => {
                 index={index}
                 imgURL={image}
                 changeBigShoeImg={(shoe) => setBigShoeImg(shoe)}
-                bigShoeImg={bigShoeImg}
+                isBigShoe={bigShoeImg===image.bigShoe}
               />
             </div>
           ))}
