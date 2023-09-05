@@ -1,4 +1,4 @@
-import CustomerReviews from "./customerReviews";
+import CustomerReviews from "./CustomerReviews";
 import Footer from "./Footer";
 import PopularProducts from "./PopularProducts";
 import Services from "./Services";

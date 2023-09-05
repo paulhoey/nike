@@ -6,9 +6,10 @@ const Button = ({label, iconURL}) => {
      font-montserrat text-lg leading-none bg-coral-red
      rounded-full text-white border-coral-red
      '>{label}
-    <img src={iconURL} alt="arrowRight"
-    className="ml-2 rounded-full
-    w-5 h-5"/></button>
+      {iconURL && <img src={iconURL} alt="arrowRight"
+      className="ml-2 rounded-full
+      w-5 h-5"/>}
+    </button>
   )
 }
 

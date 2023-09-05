@@ -16,13 +16,16 @@ const Nav = () => {
             justify-center
              items-center
               gap-16 
-              max-lg:hidden'>
+              max-lg:hidden
+              '>
             {navLinks.map((item)=>(
                 <li key={item.label}>
                     <a href={item.href} 
                     className='font-montserrat 
                     leading-normal
                     text-lg text-slate-gray
+                    hover:bg-coral-red rounded-md p-2 
+                    hover:text-white
                     '>{item.label}</a></li>
             ))}
             </ul>
